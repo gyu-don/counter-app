@@ -276,8 +276,6 @@ function getHTML(): string {
 			border: none;
 			background: none;
 			padding: 0;
-			box-shadow: 0 10px 30px rgba(255, 20, 147, 0.5),
-						0 0 50px rgba(255, 215, 0, 0.3);
 			position: relative;
 			animation: float 3s ease-in-out infinite;
 		}
@@ -297,9 +295,10 @@ function getHTML(): string {
 
 		.neko-button img {
 			width: clamp(250px, 50vw, 500px);
-			height: clamp(250px, 50vw, 500px);
+			height: auto;
 			display: block;
-			object-fit: cover;
+			filter: drop-shadow(0 10px 30px rgba(255, 20, 147, 0.5))
+					drop-shadow(0 0 50px rgba(255, 215, 0, 0.3));
 		}
 
 		.message {
