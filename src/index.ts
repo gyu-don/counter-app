@@ -273,7 +273,7 @@ function getHTML(): string {
 		.neko-button {
 			cursor: pointer;
 			transition: transform 0.1s ease;
-			border: 8px solid #ff1493;
+			border: none;
 			background: none;
 			padding: 0;
 			border-radius: 50%;
@@ -290,7 +290,6 @@ function getHTML(): string {
 
 		.neko-button:hover {
 			transform: scale(1.1) rotate(5deg);
-			border-color: #ffd700;
 		}
 
 		.neko-button:active {
@@ -353,10 +352,6 @@ function getHTML(): string {
 		@media (max-width: 600px) {
 			.container {
 				padding: 15px;
-			}
-
-			.neko-button {
-				border-width: 5px;
 			}
 		}
 	</style>
