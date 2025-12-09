@@ -400,7 +400,7 @@ function getHTML(): string {
 
 			ws.onopen = () => {
 				console.log('WebSocket connected');
-				messageElement.textContent = '🌐 世界中とつながっています！';
+				messageElement.textContent = '🐱✨ 猫ボタンカウンター ✨🐱';
 				if (reconnectTimeout) {
 					clearTimeout(reconnectTimeout);
 					reconnectTimeout = null;
