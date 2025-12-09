@@ -43,11 +43,20 @@
 		"bindings": [
 			{
 				"name": "COUNTER",
-				"class_name": "Counter",
-				"script_name": "counter-app"
+				"class_name": "Counter"
 			}
 		]
-	}
+	},
+	/**
+	 * Durable Objects Migrations
+	 * https://developers.cloudflare.com/durable-objects/reference/durable-objects-migrations/
+	 */
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_classes": ["Counter"]
+		}
+	]
 	/**
 	 * Service Bindings (communicate between multiple Workers)
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
